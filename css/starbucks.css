@@ -1,0 +1,240 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4;
+}
+/* a, abbr, acronym, address, applet, article, 
+aside, audio, b, big, blockquote, body, canvas, 
+caption, center, cite, code, dd, del, details, dfn, 
+div, dl, dt, em, embed, fieldset, figcaption, figure, 
+footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, 
+nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, 
+span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, 
+thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;    
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+} */
+
+header {
+    background-color: rgb(246, 246, 246);
+    position: fixed;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    /* z-index: 9; */
+    
+}
+
+header > .inner{
+    height: 110px;
+    
+}
+.inner {
+    position: relative;
+    /* background-color: orange; */
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.logo {
+    height: 75px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0;
+    position: absolute;
+}
+
+.top-sub-menu {
+    display: flex;
+    right: 100px;
+    position: absolute;
+    margin-top: 10px;
+
+}
+
+.top-sub-menu ul.sub-menu {
+    display: flex;
+
+}
+.top-sub-menu ul.sub-menu li {
+    position: relative;
+}
+
+.top-sub-menu ul.sub-menu li:first-child::before {
+    display: none;
+}
+
+.top-sub-menu ul.sub-menu li:before {
+    content: "";
+    width: 1px;
+    height: 13px;
+    background-color: rgb(222, 222, 222);
+    position: absolute;
+    top: 3px;
+    bottom: 0px;
+    margin: auto 0;
+}
+
+.top-sub-menu ul.sub-menu li a{
+    display: block;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+    font-family: Arial, georgia;
+    /* background-color: white; */
+    padding: 8px 12px;
+}
+.top-sub-menu ul.sub-menu li a:hover{
+    text-decoration: underline;
+}
+.top-sub-menu .search {
+    position: relative;
+    
+}
+
+.top-sub-menu .search input {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    width: 32px;
+    height: 28px;
+    transition: width 0.5s
+    ;
+}
+.top-sub-menu .search input:focus {
+   width: 180px;
+   
+
+}
+.top-sub-menu .search .material-symbols-outlined{
+    display: block;
+    position: absolute;
+    height: 28px;
+    top: 3px;
+    bottom: 0px;
+    right: 3px;
+    margin: auto 0;
+
+}
+
+header .inner ul.main-menu{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    
+}
+
+header .inner ul.main-menu li.menu-item{
+
+}
+
+header .inner ul.main-menu li.menu-item div.item-name{
+    padding: 10px 20px 34px 20px;
+    font-size: 13px;
+    font-family: Arial, georgia;
+    font-weight: 300;
+    color: #333;
+    
+}
+
+header .inner ul.main-menu li.menu-item:hover div.item-name{
+    color: rgb(93, 106, 34);
+    background-color: #2C2A29;
+    text-decoration: underline;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+}
+
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu{
+    background-color: #2C2A29;
+    width:100%;
+    position: fixed;
+    left: 0;
+    /* display: none; */
+    /* height: 0px; */
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+    
+    
+}
+
+header .inner ul.main-menu li.menu-item:hover div.item-contents-menu{
+    /* display: block; */
+    height: 300px;
+    transition: height 1s;
+
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2{
+    
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul {
+    display: flex;
+    padding: 20px 0;
+
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li {
+    width: 210px;
+    
+    
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li > h4 {
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 0 15px 0;
+
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li > ul {
+    color: #999;
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li > ul li {
+    padding: 5px 0px;
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+header .banners {
+    position: fixed;
+    right: 50px;
+    top: 142px;
+}
+
+header .banners .banner1{
+    /* border: 3px solid yellow;
+    background-color: red;
+    width: 150px;
+    height: 100px; */
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+header .banners .banner2{
+
+}
